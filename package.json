@@ -1,0 +1,36 @@
+{
+  "name": "saucedemo-playwright-framework",
+  "version": "1.0.0",
+  "description": "Enterprise-grade Playwright TypeScript Automation Framework for SauceDemo",
+  "scripts": {
+    "test": "playwright test --project=chromium",
+    "test:all-browsers": "playwright test",
+    "test:headed": "playwright test --project=chromium --headed",
+    "test:parallel": "playwright test --project=chromium --workers=4",
+    "test:login": "playwright test tests/login/ --project=chromium",
+    "test:products": "playwright test tests/products/ --project=chromium",
+    "test:cart": "playwright test tests/cart/ --project=chromium",
+    "test:checkout": "playwright test tests/checkout/ --project=chromium",
+    "test:logout": "playwright test tests/logout/ --project=chromium",
+    "test:report": "playwright show-report reports/html-report",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "qa",
+    "automation",
+    "pom",
+    "saucedemo",
+    "testing"
+  ],
+  "author": "Senior QA Automation Architect",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}

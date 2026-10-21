@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+package-lock.json.bak
+
+# Test execution artifacts
+test-results/
+playwright-report/
+reports/html-report/
+reports/test-results.json
+blob-report/
+
+# Playwright storage state authentication sessions
+playwright/.auth/
+!playwright/.auth/.gitkeep
+
+# Logs and environment
+*.log
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
